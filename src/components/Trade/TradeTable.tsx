@@ -13,6 +13,11 @@ import Moralis from "moralis/types";
 import { useRouter } from "next/router";
 import { TOKENS } from "../../constants/constants";
 import { PendingTrades } from "../../pages/trade/[id]";
+import {
+  useMoralis,
+  useNewMoralisObject,
+  useWeb3ExecuteFunction,
+} from "react-moralis";
 
 interface TradeTableProps {
   isFetching: boolean;
